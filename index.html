@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+<meta name="author" content="FamousThemes" />
+<meta name="description" content="GoMobile - A next generation web app theme" />
+<meta name="keywords" content="mobile web app, mobile template, mobile design, mobile app design, mobile app theme, mobile wordpress theme, my mobile app" />
+<title>หุ้น</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/splash_android.css"/>
+<link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css"/>
+<link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+
+<script src="https://cdn.flurry.com/js/flurry.js"></script>
+<script>FlurryAgent.startSession("9RHZZPVH3R3WVYKTWMH2");</script>
+
+
+</head>
+<body>
+
+  <div class="swiper-container swiper-parent">
+    <div class="swiper-wrapper">
+
+
+
+<!--Splash Page-->
+      <div class="swiper-slide sliderbg_splash">
+      <div class="swiper-container swiper-nestedsplash">
+               <div class="swiper-wrapper">
+                    <div class="">
+                              <div class="slide-inner">
+                                        <div class="splash_container">
+                                            <div class="logo">
+             						ราคาหุ้นล่าสุด<br />
+                                            <span>สรุปภาวะตลาดหุ้นประจำวัน</span><br/>
+											
+											</div>
+											
+											 <div class="menu">
+												<ul>
+												<li><a href="#" onclick="swiperParent.swipeTo(1);"><i class="fa fa-bar-chart-o fa-3x"></i><span>ดัชนี SET</span></a></li>
+												<li><a href="#" onclick="swiperParent.swipeTo(1);"><i class="fa fa-btc fa-3x"></i><span>Trade Volume</span></a></li>
+												<li><a href="#" onclick="swiperParent.swipeTo(2);"><i class="fa fa-plus fa-3x"></i><span>More</span></a></li>
+												</ul>
+												<div class="clearfix"></div>
+											</div>
+											
+                                            <div class="slide-to-navigate">
+                                            <a href="#" onclick="swiperParent.swipeTo(1);"><img src="images/slide-to-navigate.png" alt="" title="" border="0" /></a> <br />
+											เลื่อนเพื่อเช็คข้อมูล
+                                            </div>
+                                        </div>
+                                        <!--End of page container-->
+                              </div>
+                    </div>
+              </div>
+              <div class="swiper-scrollbarsplash"></div>
+     </div>
+     </div>
+    
+<!--Page 1 content-->
+      <div class="swiper-slide sliderbg_splash">
+      <div class="swiper-container swiper-nested1">
+               <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                              <div class="slide-inner">
+                                    <div class="page_data">
+											<!--Index-->
+											<div class="toogle_wrap">
+												<div class="trigger">
+													<a href="#">
+														ดัชนีตลาดหลักทรัพย์ SET
+													</a>
+												</div>
+												<div class="toggle_container" >
+												
+													<span id="SETUpdate">ข้อมูลล่าสุด : </span><br/>
+													<span id="SETStatus">สถานะ : </span><br/><br/>
+													<table style="width:100%;text-align:right;">
+														<tr>
+															<th>ดัชนี</th>
+															<th>ล่าสุด</th>
+															<th>เปลียนแปลง</th>
+															<th>มูลค่า (ลบ.)</th>
+														</tr>
+														<tr>
+															<td>SET</td>
+															<td id="SETLast"></td>
+															<td id="SETChange"></td>
+															<td id="SETVol"></td>
+														</tr>
+														<tr>
+															<td>SET50</td>
+															<td id="SET50Last"></td>
+															<td id="SET50Change"></td>
+															<td id="SET50Vol"></td>
+														</tr>
+														<tr>
+															<td>SET100</td>
+															<td id="SET100Last"></td>
+															<td id="SET100Change"></td>
+															<td id="SET100Vol"></td>
+														</tr>
+														<tr>
+															<td>SETHD</td>
+															<td id="SETHDLast"></td>
+															<td id="SETHDChange"></td>
+															<td id="SETHDVol"></td>
+														</tr>
+													
+													</table>
+												</div>
+											</div>
+											
+											<!--Volume-->
+											<div class="toogle_wrap">
+												<div class="trigger">
+													<a href="#">
+														มูลค่าการซื้อขายสิ้นวัน
+													</a>
+												</div>
+												<div class="toggle_container" >
+												
+													<span id="VolUpdate"></span>
+													<span>หน่วย: ล้านบาท </span><br/><br/>
+													<table style="width:100%;text-align:right;">
+														<tr>
+															<th>นักลงทุน</th>
+															<th>ซื้อ</th>
+															<th>ขาย</th>
+															<th>สุทธิ</th>
+														</tr>
+														<tr>
+															<td>สถาบัน</td>
+															<td id="VolInsBuy"></td>
+															<td id="VolInsSell"></td>
+															<td id="VolInsNet"></td>
+														</tr>
+														<tr>
+															<td>บัญชีบล.</td>
+															<td id="VolBrokerBuy"></td>
+															<td id="VolBrokerSell"></td>
+															<td id="VolBrokerNet"></td>
+														</tr>
+														<tr>
+															<td>ต่างประเทศ</td>
+															<td id="VolForBuy"></td>
+															<td id="VolForSell"></td>
+															<td id="VolForNet"></td>
+														</tr>
+														<tr>
+															<td>ในประเทศ</td>
+															<td id="VolDomBuy"></td>
+															<td id="VolDomSell"></td>
+															<td id="VolDomNet"></td>
+														</tr>
+														<tr>
+															<td>&nbsp;</td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+													</table>
+													
+													<span>มูลค่าการซื้อขายรวม :</span>
+													<span id="VolTotal"></span>
+												</div>
+											</div>
+											
+											<!--FTSE-->
+											<div class="toogle_wrap">
+												<div class="trigger">
+													<a href="#">
+														ดัชนีตลาดหลักทรัพย์ FTSE
+													</a>
+												</div>
+												<div class="toggle_container" >
+												
+													<table style="width:100%;text-align:right;">
+														<tr>
+															<th>ดัชนี</th>
+															<th>ล่าสุด</th>
+															<th>เปลียนแปลง</th>
+														</tr>
+														<tr>
+															<td>Large Cap - FSTHL</td>
+															<td id="FSTHLLast"></td>
+															<td id="FSTHLChange"></td>
+														</tr>
+														<tr>
+															<td>Mid Cap - FSTHM</td>
+															<td id="FSTHMLast"></td>
+															<td id="FSTHMChange"></td>
+														</tr>
+														<tr>
+															<td>Small Cap - FSTHS</td>
+															<td id="FSTHSLast"></td>
+															<td id="FSTHSChange"></td>
+														</tr>
+														<tr>
+															<td>All-Share - FSTHA</td>
+															<td id="FSTHALast"></td>
+															<td id="FSTHAChange"></td>
+														</tr>
+														<tr>
+															<td>Shariah - FSTSH</td>
+															<td id="FSTSHLast"></td>
+															<td id="FSTSHChange"></td>
+														</tr>
+													
+													</table>
+												</div>
+											</div>
+											
+											
+											<div style="width:1px; height:30px;"></div>
+									</div>
+                                        <!--End of page container-->
+                              </div>
+                    </div>
+              </div>
+              <div class="swiper-scrollbar1"></div>
+     </div>
+     </div>
+      
+<!--Page 2 content-->
+      <div class="swiper-slide sliderbg">
+      <div class="swiper-container swiper-nested2">
+               <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                              <div class="slide-inner">
+                                        <div class="pages_container">
+											<h2 class="page_title">แอพลิเคชั่นแนะนำ</h2>
+                                      
+											<div id="recommend_app"></div>
+											
+											<div class="clearfix"></div>
+											
+											<div style="width:1px; height:50px;"></div>
+											
+										   
+										</div>
+								</div>
+                    </div>
+              </div>
+              <div class="swiper-scrollbar2"></div>
+     </div>
+    </div>
+	
+     <!--End of pages--> 
+    <div class="pagination"></div>
+  </div>
+<!--Footer -->  
+<div id="fullstage"></div>
+<div id="footer"></div>
+<div id="deviceready" class="blink">
+	<p class="event listening"></p>
+	<p class="event received"></p>
+</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper-2.1.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.scrollbar-2.1.js"></script>
+<script type="text/javascript" src="js/jquery.tabify.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/splash.js"></script>
+<script type="text/javascript" src="http://apps.flutx.com/AFIT03/js/apps.js"></script>
+<script type="text/javascript" src="http://apps.flutx.com/AFIT03/js/ads.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
+	app.initialize();
+</script>
+
+</body>
+</html>
